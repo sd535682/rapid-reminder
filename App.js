@@ -1,9 +1,10 @@
-import {Text, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import TabNavigation from './src/navigation/tabnavigation';
 
 export default function App() {
   return (
-    <View>
-      <Text>Hello World</Text>
-    </View>
+    <NavigationContainer>
+      <TabNavigation />
+    </NavigationContainer>
   );
 }

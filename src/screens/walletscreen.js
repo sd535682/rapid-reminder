@@ -5,9 +5,18 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 
 export default function WalletScreen() {
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: 'black'}}>
       <Header screen={'Wallet'} />
-      <Text>WalletScreen</Text>
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        <Text style={{color: 'white', fontSize: 20, fontWeight: 'bold'}}>
+          Wallet Screen
+        </Text>
+      </View>
     </SafeAreaView>
   );
 }

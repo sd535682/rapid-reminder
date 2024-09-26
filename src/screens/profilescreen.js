@@ -5,9 +5,18 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 
 export default function ProfileScreen() {
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: 'black'}}>
       <Header screen={'Profile'} />
-      <Text>ProfileScreen</Text>
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        <Text style={{color: 'white', fontSize: 20, fontWeight: 'bold'}}>
+          Profile Screen
+        </Text>
+      </View>
     </SafeAreaView>
   );
 }

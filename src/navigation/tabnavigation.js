@@ -14,6 +14,7 @@ const Tab = createBottomTabNavigator();
 export default function TabNavigation() {
   return (
     <Tab.Navigator
+      initialRouteName="Activity"
       screenOptions={{
         headerShown: false,
         tabBarHideOnKeyboard: true,

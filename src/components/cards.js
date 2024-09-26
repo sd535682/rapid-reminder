@@ -1,7 +1,23 @@
-import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import React, {useState, useCallback} from 'react';
+import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
+import ConfirmModal from './modal';
 
-const EventCard = React.memo(({event}) => {
+const EventCard = ({event, onCancel}) => {
+  const [modalVisible, setModalVisible] = useState(false);
+
+  const handleCancelPress = useCallback(() => {
+    setModalVisible(true);
+  }, []);
+
+  const handleConfirmCancel = useCallback(() => {
+    setModalVisible(false);
+    onCancel(event);
+  }, [event, onCancel]);
+
+  const handleCancelModal = useCallback(() => {
+    setModalVisible(false);
+  }, []);
+
   return (
     <View style={styles.card}>
       <Text style={styles.name}>{event.name}</Text>
@@ -11,9 +27,17 @@ const EventCard = React.memo(({event}) => {
       <Text style={styles.instructor}>Instructor: {event.username}</Text>
       <Text style={styles.price}>Price: {event.price}</Text>
       <Text style={styles.capacity}>Capacity: {event.capacity}</Text>
+      <TouchableOpacity style={styles.cancelButton} onPress={handleCancelPress}>
+        <Text style={styles.cancelButtonText}>Cancel</Text>
+      </TouchableOpacity>
+      <ConfirmModal
+        visible={modalVisible}
+        onConfirm={handleConfirmCancel}
+        onCancel={handleCancelModal}
+      />
     </View>
   );
-});
+};
 
 const styles = StyleSheet.create({
   card: {
@@ -51,7 +75,18 @@ const styles = StyleSheet.create({
   capacity: {
     fontSize: 14,
     color: '#666',
+    marginBottom: 8,
+  },
+  cancelButton: {
+    backgroundColor: '#FF3B30',
+    borderRadius: 5,
+    padding: 8,
+    alignItems: 'center',
+  },
+  cancelButtonText: {
+    color: '#fff',
+    fontWeight: 'bold',
   },
 });
 
-export default EventCard;
+export default React.memo(EventCard);

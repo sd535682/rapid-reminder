@@ -21,11 +21,9 @@ export default function Upcoming() {
       const data = await response.json();
       setEvents(data.events[0]);
 
-      // Extract dates
       const extractedDates = Object.keys(data.events[0]);
       setDates(extractedDates);
 
-      // Set the first date as selected by default
       if (extractedDates.length > 0) {
         setSelectedDate(extractedDates[0]);
       }
@@ -38,9 +36,22 @@ export default function Upcoming() {
     setSelectedDate(date);
   }, []);
 
+  const handleCancelEvent = useCallback(
+    cancelledEvent => {
+      setEvents(prevEvents => {
+        const updatedEvents = {...prevEvents};
+        updatedEvents[selectedDate] = updatedEvents[selectedDate].filter(
+          event => event !== cancelledEvent,
+        );
+        return updatedEvents;
+      });
+    },
+    [selectedDate],
+  );
+
   const renderEventCard = useCallback(
-    ({item}) => <EventCard event={item} />,
-    [],
+    ({item}) => <EventCard event={item} onCancel={handleCancelEvent} />,
+    [handleCancelEvent],
   );
 
   return (

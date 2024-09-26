@@ -1,5 +1,6 @@
 import React from 'react';
 import {TouchableOpacity, Text, StyleSheet} from 'react-native';
+import {UIColors} from '../constants/uielements';
 
 const DateChip = React.memo(({date, isSelected, onSelect}) => {
   const formattedDate = new Date(date).toLocaleDateString('en-US', {
@@ -20,21 +21,24 @@ const DateChip = React.memo(({date, isSelected, onSelect}) => {
 
 const styles = StyleSheet.create({
   chip: {
-    backgroundColor: '#e0e0e0',
-    borderRadius: 20,
+    backgroundColor: 'white',
     paddingHorizontal: 12,
-    paddingVertical: 6,
     marginHorizontal: 4,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 10,
+    borderRadius: 5,
   },
   selectedChip: {
-    backgroundColor: '#007AFF',
+    backgroundColor: UIColors.tabColor,
   },
   chipText: {
     fontSize: 14,
-    color: '#333',
+    color: 'black',
+    fontFamily: 'Mukta-Regular',
   },
   selectedChipText: {
-    color: '#fff',
+    color: UIColors.backgroundColor,
   },
 });
 

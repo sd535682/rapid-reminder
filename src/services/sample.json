@@ -1,0 +1,244 @@
+{
+  "events": [
+    {
+      "2024-09-22": [
+        {
+          "name": "Yoga Class",
+          "time": "10:00 AM",
+          "duration": "1 hour",
+          "username": "JohnDoe",
+          "price": "$10",
+          "capacity": "5/10"
+        },
+        {
+          "name": "Pilates",
+          "time": "02:00 PM",
+          "duration": "1.5 hours",
+          "username": "SamSmith",
+          "price": "$12",
+          "capacity": "7/12"
+        }
+      ],
+      "2024-09-23": [
+        {
+          "name": "Dance Class",
+          "time": "11:00 AM",
+          "duration": "2 hours",
+          "username": "JaneDoe",
+          "price": "$15",
+          "capacity": "8/15"
+        },
+        {
+          "name": "Zumba Session",
+          "time": "06:00 PM",
+          "duration": "1 hour",
+          "username": "AlexJones",
+          "price": "$20",
+          "capacity": "10/10"
+        }
+      ],
+      "2024-09-24": [
+        {
+          "name": "Pilates",
+          "time": "09:00 AM",
+          "duration": "1.5 hours",
+          "username": "SamSmith",
+          "price": "$12",
+          "capacity": "7/12"
+        },
+        {
+          "name": "Yoga Class",
+          "time": "05:00 PM",
+          "duration": "1 hour",
+          "username": "JohnDoe",
+          "price": "$10",
+          "capacity": "5/10"
+        }
+      ],
+      "2024-09-25": [
+        {
+          "name": "Zumba Session",
+          "time": "08:00 AM",
+          "duration": "1 hour",
+          "username": "AlexJones",
+          "price": "$20",
+          "capacity": "10/10"
+        }
+      ],
+      "2024-09-26": [
+        {
+          "name": "Boxing Class",
+          "time": "06:00 PM",
+          "duration": "1 hour",
+          "username": "ChrisEvans",
+          "price": "$18",
+          "capacity": "6/10"
+        },
+        {
+          "name": "Kickboxing",
+          "time": "07:30 PM",
+          "duration": "1 hour",
+          "username": "BruceLee",
+          "price": "$20",
+          "capacity": "9/10"
+        }
+      ],
+      "2024-09-27": [
+        {
+          "name": "Swimming Class",
+          "time": "07:00 AM",
+          "duration": "2 hours",
+          "username": "EmilyClark",
+          "price": "$25",
+          "capacity": "3/10"
+        }
+      ],
+      "2024-09-28": [
+        {
+          "name": "Yoga Class",
+          "time": "10:00 AM",
+          "duration": "1 hour",
+          "username": "JohnDoe",
+          "price": "$10",
+          "capacity": "8/10"
+        },
+        {
+          "name": "Meditation",
+          "time": "12:00 PM",
+          "duration": "1 hour",
+          "username": "Gandhi",
+          "price": "$5",
+          "capacity": "20/20"
+        }
+      ],
+      "2024-09-29": [
+        {
+          "name": "CrossFit Training",
+          "time": "05:00 PM",
+          "duration": "1.5 hours",
+          "username": "MikeTyson",
+          "price": "$30",
+          "capacity": "12/15"
+        }
+      ],
+      "2024-09-30": [
+        {
+          "name": "Cycling",
+          "time": "07:00 AM",
+          "duration": "2 hours",
+          "username": "SarahConnor",
+          "price": "$18",
+          "capacity": "5/10"
+        },
+        {
+          "name": "Strength Training",
+          "time": "10:00 AM",
+          "duration": "1.5 hours",
+          "username": "HulkHogan",
+          "price": "$25",
+          "capacity": "4/10"
+        }
+      ],
+      "2024-10-01": [
+        {
+          "name": "Kickboxing",
+          "time": "06:30 PM",
+          "duration": "1 hour",
+          "username": "BruceLee",
+          "price": "$20",
+          "capacity": "9/10"
+        },
+        {
+          "name": "Tai Chi Class",
+          "time": "08:00 PM",
+          "duration": "1 hour",
+          "username": "JetLi",
+          "price": "$10",
+          "capacity": "6/10"
+        }
+      ],
+      "2024-10-02": [
+        {
+          "name": "Tai Chi Class",
+          "time": "08:00 AM",
+          "duration": "1 hour",
+          "username": "JetLi",
+          "price": "$10",
+          "capacity": "6/10"
+        },
+        {
+          "name": "Yoga Class",
+          "time": "10:00 AM",
+          "duration": "1 hour",
+          "username": "JohnDoe",
+          "price": "$10",
+          "capacity": "8/10"
+        }
+      ],
+      "2024-10-03": [
+        {
+          "name": "Strength Training",
+          "time": "09:00 AM",
+          "duration": "1.5 hours",
+          "username": "HulkHogan",
+          "price": "$25",
+          "capacity": "4/10"
+        },
+        {
+          "name": "Pilates",
+          "time": "02:00 PM",
+          "duration": "1.5 hours",
+          "username": "SamSmith",
+          "price": "$12",
+          "capacity": "7/12"
+        }
+      ],
+      "2024-10-04": [
+        {
+          "name": "Aerobics",
+          "time": "05:30 PM",
+          "duration": "2 hours",
+          "username": "JaneAusten",
+          "price": "$12",
+          "capacity": "7/10"
+        },
+        {
+          "name": "Zumba Session",
+          "time": "08:00 PM",
+          "duration": "1 hour",
+          "username": "AlexJones",
+          "price": "$20",
+          "capacity": "10/10"
+        }
+      ],
+      "2024-10-05": [
+        {
+          "name": "Meditation",
+          "time": "07:00 AM",
+          "duration": "1 hour",
+          "username": "Gandhi",
+          "price": "$5",
+          "capacity": "20/20"
+        }
+      ],
+      "2024-10-06": [
+        {
+          "name": "Stretching Session",
+          "time": "08:00 AM",
+          "duration": "45 minutes",
+          "username": "YogaGuru",
+          "price": "$8",
+          "capacity": "15/20"
+        },
+        {
+          "name": "Yoga Class",
+          "time": "10:00 AM",
+          "duration": "1 hour",
+          "username": "JohnDoe",
+          "price": "$10",
+          "capacity": "8/10"
+        }
+      ]
+    }
+  ]
+}

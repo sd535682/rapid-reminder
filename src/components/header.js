@@ -4,6 +4,7 @@ import {useEffect, useState} from 'react';
 import dayjs from 'dayjs';
 import Feather from 'react-native-vector-icons/Feather';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
+import {UIColors} from '../constants/uielements';
 
 export default function Header({screen}) {
   const [date, setDate] = useState(dayjs());
@@ -18,7 +19,7 @@ export default function Header({screen}) {
   return (
     <View style={styles.header}>
       <View style={styles.text_container}>
-        <Text>Today's {date.format('MMM DD')}</Text>
+        <Text style={styles.dateText}>Today's {date.format('MMM DD')}</Text>
         <Text style={styles.headerText}>{screen}</Text>
       </View>
       <View style={styles.icon_container}>
@@ -33,17 +34,22 @@ const styles = StyleSheet.create({
   header: {
     width: wp(100),
     height: hp(10),
-    backgroundColor: 'plum',
+    backgroundColor: UIColors.backgroundColor,
     paddingHorizontal: wp(5),
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
+  dateText: {
+    fontSize: 16,
+    color: 'grey',
+    fontFamily: 'Mukta-Bold',
+  },
   headerText: {
     fontSize: 25,
-    fontWeight: 'bold',
-    color: 'white',
+    color: 'black',
+    fontFamily: 'Mukta-Bold',
   },
   text_container: {
     flexDirection: 'column',

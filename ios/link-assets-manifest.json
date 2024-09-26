@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Mukta-Bold.ttf",
+      "sha1": "a928d8465eb1a78f4c442c7f94a231041ff5bcac"
+    },
+    {
+      "path": "src/assets/fonts/Mukta-Regular.ttf",
+      "sha1": "c7e02ce2f3fcc9faa6fbe659f4d108777b2f66df"
+    }
+  ]
+}

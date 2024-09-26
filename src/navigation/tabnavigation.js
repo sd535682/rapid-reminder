@@ -8,6 +8,7 @@ import Octicons from 'react-native-vector-icons/Octicons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import {UIColors} from '../constants/uielements';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,8 +19,8 @@ export default function TabNavigation() {
       screenOptions={{
         headerShown: false,
         tabBarHideOnKeyboard: true,
-        tabBarActiveTintColor: 'tomato',
-        tabBarInactiveTintColor: 'gray',
+        tabBarActiveTintColor: 'black',
+        tabBarInactiveTintColor: 'lightgray',
       }}>
       <Tab.Screen
         name="Home"

@@ -6,6 +6,8 @@ import {
   StyleSheet,
   Modal as RNModal,
 } from 'react-native';
+import {wp} from '../constants/responsive';
+import {UIColors} from '../constants/uielements';
 
 const ConfirmModal = ({visible, onConfirm, onCancel}) => {
   return (
@@ -43,25 +45,20 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    paddingHorizontal: wp(5),
   },
   modalView: {
     backgroundColor: 'white',
-    borderRadius: 20,
-    padding: 35,
+    borderRadius: 15,
+    padding: wp(10),
     alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 4,
-    elevation: 5,
   },
   modalText: {
     marginBottom: 15,
     textAlign: 'center',
     fontSize: 18,
+    fontFamily: 'Mukta-Bold',
+    color: 'black',
   },
   buttonContainer: {
     flexDirection: 'row',
@@ -69,20 +66,20 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   button: {
-    borderRadius: 20,
+    borderRadius: 5,
     padding: 10,
     elevation: 2,
     minWidth: 100,
   },
   cancelButton: {
-    backgroundColor: '#FF3B30',
+    backgroundColor: UIColors.tabColor,
   },
   confirmButton: {
     backgroundColor: '#34C759',
   },
   buttonText: {
     color: 'white',
-    fontWeight: 'bold',
+    fontFamily: 'Mukta-Bold',
     textAlign: 'center',
   },
 });
